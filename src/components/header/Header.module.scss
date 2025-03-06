@@ -1,0 +1,68 @@
+@import "../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  background-color: $light;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+
+    img {
+      width: 200px;
+      height: auto;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      color: $black;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 30px;
+    height: 26px;
+
+    a {
+      text-decoration: none;
+      color: $dark;
+      font-size: 20px;
+      font-weight: 400;
+      transition: color 0.3s;
+      line-height: 130%;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  .contactButton {
+    margin-right: 80px;
+    border-radius: 20px;
+    margin-top: 5px;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+  }
+
+
+}

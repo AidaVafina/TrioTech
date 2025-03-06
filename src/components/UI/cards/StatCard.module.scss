@@ -1,0 +1,40 @@
+@import "../../../styles/variables";
+
+.statCard {
+  width: 325px;
+  height: 260px;
+  background-color: $accent;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  color: $light;
+  text-align: left;
+  position: relative;
+  font-family: "SF Mono", monospace;
+  margin-bottom: 0;
+
+  h3 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: absolute;
+    line-height: 1.2;
+    top: 0;
+    left: 25px;
+    color: $light;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+    position: absolute;
+    width: 285px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-weight: 300;
+  }
+}

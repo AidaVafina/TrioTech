@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "SF Mono";
+    src: url("assets/fonts/SFMono-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("assets/fonts/SFMono-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("assets/fonts/SFMono-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Mono", monospace;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}

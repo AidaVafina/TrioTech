@@ -1,0 +1,21 @@
+@import "../../../styles/variables";
+
+.button {
+  background-color: $accent;
+  color: $light;
+  width: 260px;
+  height: 60px;
+  padding: 10px 15px;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.3s;
+  letter-spacing: 0;
+
+  &:hover {
+    background-color: darken($accent, 10%);
+  }
+}
