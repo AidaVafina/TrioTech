@@ -14,8 +14,10 @@
   line-height: 1;
   transition: background 0.3s;
   letter-spacing: 0;
+  font-family: SF Mono;
+
 
   &:hover {
-    background-color: darken($accent, 10%);
+    background-color: $accent, 10%;
   }
 }

@@ -1,18 +1,22 @@
 @import "../../styles/variables.scss";
 
 .services {
-  width: calc(100vw - 80px);
-  height: 1176px;
+  width: 100%;
+  max-width: calc(100vw - 80px);
+  height: 200px;
   margin: 120px auto 0;
-  background-color: $light;
+  background-color: $accent;
   border-radius: 20px;
   padding: 60px;
   color: $dark;
   text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
 
   .container {
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   h2 {

@@ -6,10 +6,10 @@
   background-color: $dark;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 60px 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
-  margin-top: -40px;
 }
 
 .container {
@@ -51,16 +51,15 @@
 .stats {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 80px;
   margin-top: 25px;
   width: 100%;
 }
 
 .partnersWrapper {
-  margin-top: 20px;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   position: relative;
 }
@@ -72,8 +71,7 @@
   white-space: nowrap;
   height: 150px;
   align-items: center;
-  width: 100%;
-
+  min-width: 100vw;
 }
 
 @keyframes marquee {
