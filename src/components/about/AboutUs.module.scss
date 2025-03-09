@@ -9,8 +9,11 @@
   padding-top: 80px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative; // Чтобы .partnersWrapper был относительно .about
 }
+
 
 .container {
   width: calc(100% - 80px);
@@ -71,7 +74,6 @@
   white-space: nowrap;
   height: 150px;
   align-items: center;
-  min-width: 100vw;
 }
 
 @keyframes marquee {

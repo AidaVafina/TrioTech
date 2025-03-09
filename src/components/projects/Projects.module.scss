@@ -63,26 +63,42 @@
     line-height: 120%;
     letter-spacing: -2%;
     text-align: left;
-
-
-
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 900px 440px;
+    grid-template-columns: 900px 460px;
     grid-template-rows: 555px 550px;
     column-gap: 20px;
     row-gap: 10px;
-    justify-content: space-between;
-    padding: 0 0;
+    justify-content: start;
+    padding: 0;
+    grid-template-areas:
+    "big1 small1"
+    "small2 big2";
   }
 
-  .card:first-child,
-  .card:last-child {
-    width: 900px;
-    height: 555px;
+  .big1 {
+    grid-area: big1;
   }
+
+  .small1 {
+    grid-area: small1;
+  }
+
+  .small2 {
+    grid-area: small2;
+    width: 440px;
+  }
+
+  .big2 {
+    grid-area: big2;
+    width: 800px;
+    margin-left: -400px;
+  }
+
+
+
 
   .moreButton {
     margin-top: 40px;
@@ -102,8 +118,5 @@
     text-align: center;
     box-shadow: 4px 6px 20px 2px rgba(102, 152, 255, 0.4);
     margin-bottom: 120px;
-
-
-
   }
 }

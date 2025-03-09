@@ -13,7 +13,7 @@ const MainPage: React.FC = () => {
                     шаг впереди конкурентов.
                 </p>
                 <div className={styles.buttons}>
-                    <Button text="Работать с нами" />
+                    <Button text="Работать с нами" className={styles.shadowButton} />
                     <button className={styles.secondaryButton}>Узнать больше</button>
                 </div>
             </div>

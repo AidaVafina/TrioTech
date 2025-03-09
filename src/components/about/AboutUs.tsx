@@ -38,12 +38,12 @@ const AboutUs: React.FC = () => {
                     <StatCard value="5 раз" description="Ускоряем разработку в 5 раз благодаря четким процессам."/>
                     <StatCard value="100%" description="Гарантия: вы платите только за выполненные этапы."/>
                 </div>
-                <div className={styles.partnersWrapper}>
-                    <div className={styles.partners}>
-                        {repeatedPartners.map((partner, index) => (
-                            <Partner key={index} logo={partner.logo} alt={partner.alt}/>
-                        ))}
-                    </div>
+            </div>
+            <div className={styles.partnersWrapper}>
+                <div className={styles.partners}>
+                    {repeatedPartners.map((partner, index) => (
+                        <Partner key={index} logo={partner.logo} alt={partner.alt}/>
+                    ))}
                 </div>
             </div>
         </section>

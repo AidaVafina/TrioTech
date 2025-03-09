@@ -7,13 +7,11 @@ import placeholder from "../../assets/images/placeholder.png";
 const text = "Платформа для успешной реализации бизнес-идей и выгодных инвестиций"
 
 const projects = [
-    { title: "FINDELER", description: text, image: placeholder, className: styles.bigCard },
-    { title: "FINDELER", description: text, image: placeholder, className: styles.smallCard },
-    { title: "FINDELER", description: text, image: placeholder, className: styles.bigCard },   // <-- Большая карта теперь 3-я
-    { title: "FINDELER", description: text, image: placeholder, className: styles.smallCard }  // <-- Маленькая карта теперь 4-я
+    { title: "FINDELER", description: text, image: placeholder, className: styles.big1 },
+    { title: "FINDELER", description: text, image: placeholder, className: styles.small1 },
+    { title: "FINDELER", description: text, image: placeholder, className: styles.small2 },
+    { title: "FINDELER", description: text, image: placeholder, className: styles.big2 }
 ];
-
-
 
 const Projects: React.FC = () => {
     return (
@@ -30,6 +28,7 @@ const Projects: React.FC = () => {
                             title={project.title}
                             description={project.description}
                             image={project.image}
+                            className={project.className}
                         />
                     ))}
                 </div>

@@ -1,16 +1,20 @@
 import React from "react";
 import styles from "./ProjectCard.module.scss";
+import placeholder from "../../../assets/images/placeholder.png"; // Импортируем заглушку
 
 interface ProjectCardProps {
     title: string;
     description: string;
-    image: string;
+    image?: string; // необязательный
+    className?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, className }) => {
     return (
-        <div className={styles.card}>
-            <img src={image} alt={title} className={styles.image} />
+        <div className={`${styles.card} ${className}`}>
+            <div className={styles.imageContainer}>
+                <img src={image || placeholder} alt={title} className={!image ? styles.placeholder : styles.image} />
+            </div>
             <div className={styles.content}>
                 <div className={styles.carddesc}>
                     <h3>{title}</h3>
@@ -20,5 +24,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image }) 
         </div>
     );
 };
+
 
 export default ProjectCard;
