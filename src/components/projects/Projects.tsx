@@ -15,7 +15,7 @@ const projects = [
 
 const Projects: React.FC = () => {
     return (
-        <section className={styles.projects}>
+        <section id="projects" className={styles.projects}>
             <div className={styles.container}>
                 <div className={styles.header}>
                     <button className={styles.category}>Наши проекты</button>

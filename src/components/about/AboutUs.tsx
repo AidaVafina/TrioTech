@@ -23,7 +23,7 @@ const repeatedPartners = Array(50).fill(partners).flat();
 
 const AboutUs: React.FC = () => {
     return (
-        <section className={styles.about}>
+        <section id="about" className={styles.about}>
             <div className={styles.container}>
                 <div className={styles.text}>
                     <h2 className={styles.logo}>[ TRIOTECH ]</h2>

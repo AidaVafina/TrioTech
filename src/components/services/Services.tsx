@@ -3,7 +3,7 @@ import styles from "./Services.module.scss";
 
 const Services: React.FC = () => {
     return (
-        <section className={styles.services}>
+        <section id="services" className={styles.services}>
             <div className={styles.container}>
                 <h2>блок услуг</h2>
             </div>

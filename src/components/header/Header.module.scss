@@ -18,7 +18,6 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 40px;
-
   }
 
   .logo {
@@ -49,12 +48,9 @@
       color: $dark;
       font-size: 20px;
       font-weight: 400;
-      transition: color 0.3s;
       line-height: 130%;
-
-      &:hover {
-        color: $blue;
-      }
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
     }
   }
 

@@ -67,11 +67,6 @@
         border-radius: 16px;
         cursor: pointer;
         transition: all 0.3s;
-
-        &:hover {
-          background-color: $black;
-          color: $light;
-        }
       }
     }
   }
