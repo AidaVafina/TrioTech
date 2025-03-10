@@ -67,7 +67,7 @@
 
   .grid {
     display: grid;
-    grid-template-columns: 900px 460px;
+    grid-template-columns: 900px 440px;
     grid-template-rows: 555px 550px;
     column-gap: 20px;
     row-gap: 10px;
@@ -93,7 +93,7 @@
 
   .big2 {
     grid-area: big2;
-    width: 800px;
+    width: 780px;
     margin-left: -400px;
   }
 
