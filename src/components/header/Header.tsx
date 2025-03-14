@@ -1,8 +1,25 @@
+import { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import logo from "../../assets/main-logo1.svg";
 import Button from "../UI/button/Button.tsx";
+import vk from "../../assets/header/vk.png"
+import whatsup from "../../assets/header/whatsup.png"
+import inst  from "../../assets/header/inst.png"
+import tg from "../../assets/header/tg.png"
 
 const Header: React.FC = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const scrollToSection = (id: string) => {
         const section = document.getElementById(id);
@@ -18,9 +35,8 @@ const Header: React.FC = () => {
         }
     };
 
-
     return (
-        <header className={styles.header}>
+        <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
             <div className={styles.container}>
                 <div className={styles.logo}>
                     <img src={logo} alt="TRIOTECH Logo" />
@@ -33,7 +49,16 @@ const Header: React.FC = () => {
                     <a onClick={() => scrollToSection("contacts")}>Контакты</a>
                 </nav>
                 <div className={styles.contactButton}>
-                    <Button text="Связаться с нами" />
+                    {!scrolled ? (
+                        <Button text="Связаться с нами" />
+                    ) : (
+                        <div className={styles.icons}>
+                            <img src={vk} alt="Icon VK" />
+                            <img src={inst} alt="Icon Inst" />
+                            <img src={tg} alt="Icon tg" />
+                            <img src={whatsup} alt="Icon WhatsUp" />
+                        </div>
+                    )}
                 </div>
             </div>
         </header>
