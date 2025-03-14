@@ -105,12 +105,10 @@
 .scrolled {
   position: fixed;
   top: 20px;
-
   left: 50%;
   transform: translateX(-50%);
 
   background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgb(253, 253, 253);
 
   padding: 10px 0;
   width: 900px;
@@ -120,7 +118,7 @@
   justify-content: center;
   align-items: center;
 
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out ;
 
   .container {
     width: 100%;
@@ -132,18 +130,20 @@
 
   .logo img {
     width: 140px;
-    transition: font-size 0.2s ease-in-out;
+    transition: width 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.9;
   }
 
   .nav a {
     font-size: 16px;
     margin-top: 3px;
-    transition: font-size 0.2s ease-in-out;
+    transition: font-size 0.4s ease-in-out, opacity 0.3s ease-in-out;
   }
 
   .contactButton {
     width: 120px;
     transform: scale(0.9);
-    transition: transform 0.1s ;
+    transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.9;
   }
 }
