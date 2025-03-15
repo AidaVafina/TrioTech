@@ -3,12 +3,10 @@
 .services {
   width: 100%;
   max-width: calc(100vw - 80px);
-  height: 200px;
   margin: 120px auto 0;
-  background-color: $accent;
+  background-color: $light;
   border-radius: 20px;
-  padding: 60px;
-  color: $dark;
+  color: $light;
   text-align: center;
   box-sizing: border-box;
   overflow: hidden;
@@ -19,14 +17,47 @@
     box-sizing: border-box;
   }
 
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .category {
+    margin-left: 0;
+    width: 130px;
+    height: 59px;
+    padding: 15px 20px;
+    border: 1px solid rgb(224, 226, 229);
+    border-radius: 16px;
+    color: $gray-text;
+    background-color: $light;
+    font-family: SF Mono;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+  }
+
   h2 {
     font-size: 48px;
-    margin-bottom: 20px;
-    color: $dark;
     font-weight: 600;
+    width: 713px;
+    height: 116px;
+    color: $dark;
     line-height: 120%;
     letter-spacing: -2%;
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
   }
 }
